@@ -38,6 +38,9 @@ You can run the **SPERT** program on Ubuntu Linux (and presumably other Linux di
 
 - To uninstall the program, simply delete the **PascalBoids** binary executable file.
 
+**_Note_**: When running on Linux, the StdErr error messages may not appear in the terminal.
+Instead these messages may be written to a file named **CON** in the current directory.
+
 ### Running the Program
 
 Open a Command Prompt or Terminal window.
