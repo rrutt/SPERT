@@ -1,0 +1,12 @@
+backup/
+lib/
+
+*.exe
+*.res
+
+test.txt
+
+src/SPERT
+
+!bin/SPERT
+!bin/*.exe
