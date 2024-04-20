@@ -2,20 +2,18 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <BuildModes Active="Default"/>
     <Units Count="1">
       <Unit0>
         <Filename Value="SPERT.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="1234"/>
-        <CursorPos X="49" Y="1260"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit0>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="SPERT.lpr"/>
       </Position1>
@@ -129,13 +127,17 @@
         <Filename Value="SPERT.lpr"/>
         <Caret Line="1240" Column="8" TopLine="1215"/>
       </Position29>
+      <Position30>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="1260" Column="49" TopLine="1188"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="1" ActiveMode="default">
         <Mode0 Name="default">
           <local>
-            <CommandLineParams Value="../test/SPERT-Example.txt"/>
+            <CommandLineParams Value="..\test\SPERT-Example.txt"/>
           </local>
         </Mode0>
       </Modes>
