@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="SPERT.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="1234"/>
+        <CursorPos X="49" Y="1260"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="SPERT.lpr"/>
+      </Position1>
+      <Position2>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="569" Column="20" TopLine="544"/>
+      </Position2>
+      <Position3>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="1465" Column="65" TopLine="1468"/>
+      </Position3>
+      <Position4>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="593" Column="63" TopLine="575"/>
+      </Position4>
+      <Position5>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="358" TopLine="352"/>
+      </Position5>
+      <Position6>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="359" TopLine="352"/>
+      </Position6>
+      <Position7>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="360" TopLine="352"/>
+      </Position7>
+      <Position8>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="361" TopLine="352"/>
+      </Position8>
+      <Position9>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="362" TopLine="352"/>
+      </Position9>
+      <Position10>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="363" TopLine="352"/>
+      </Position10>
+      <Position11>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="364" TopLine="352"/>
+      </Position11>
+      <Position12>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="365" TopLine="352"/>
+      </Position12>
+      <Position13>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="367" TopLine="355"/>
+      </Position13>
+      <Position14>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="369" TopLine="355"/>
+      </Position14>
+      <Position15>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="358" TopLine="355"/>
+      </Position15>
+      <Position16>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="590" Column="67" TopLine="583"/>
+      </Position16>
+      <Position17>
+        <Filename Value="SPERT.lpr"/>
+      </Position17>
+      <Position18>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="128" Column="29" TopLine="101"/>
+      </Position18>
+      <Position19>
+        <Filename Value="SPERT.lpr"/>
+      </Position19>
+      <Position20>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="97" Column="53" TopLine="79"/>
+      </Position20>
+      <Position21>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="100" Column="41" TopLine="79"/>
+      </Position21>
+      <Position22>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="128" Column="29" TopLine="101"/>
+      </Position22>
+      <Position23>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="174" Column="33" TopLine="148"/>
+      </Position23>
+      <Position24>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="260" Column="13" TopLine="233"/>
+      </Position24>
+      <Position25>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="293" Column="48" TopLine="267"/>
+      </Position25>
+      <Position26>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="1239" Column="20" TopLine="1236"/>
+      </Position26>
+      <Position27>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="203" Column="10" TopLine="186"/>
+      </Position27>
+      <Position28>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="260" Column="13" TopLine="233"/>
+      </Position28>
+      <Position29>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="293" Column="48" TopLine="267"/>
+      </Position29>
+      <Position30>
+        <Filename Value="SPERT.lpr"/>
+        <Caret Line="1240" Column="8" TopLine="1215"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="1" ActiveMode="default">
+        <Mode0 Name="default">
+          <local>
+            <CommandLineParams Value="../test/SPERT-Example.txt"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
