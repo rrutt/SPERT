@@ -1461,6 +1461,8 @@ Begin
   Close (PrnFile);
 End; { WritePrnFile }
 
+{$R *.res}
+
 Begin
   assign (StdErr, 'CON');
 
