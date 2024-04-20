@@ -6,7 +6,7 @@ The _Stochastic Project Evaluation & Review Technique_ program, **SPERT**, suppo
 
 This program is free open source software licensed under the [MIT License](./MIT-License.html), Copyright © 2024 Rick Rutt.
 
-Information about the development history and source code compilation of the **SPERT** program appear at the end of this document in the [Developer Information](#DeveloperInformation) section.
+Information about the source code compilation of the **SPERT** program appear at the end of this document in the [Developer Information](#DeveloperInformation) section.
 
 ## About the Software
 
@@ -89,7 +89,58 @@ indicates reuse of the value from the preceding line.
 
 - (The last * line is optional.)
 
-The file **test\SPERT-Example.txt** contains a small sample project for use in testing the **SPERT** program.
+The file **test\SPERT-Example.txt** contains a small sample project for use in testing the **SPERT** program:
+	
+	Example Project Schedule
+	
+	kickoff    1 1 1 @3 All-day Kickoff Meeting (entire team)
+	^interview 3 5 10 @3 Requirements Interviews (entire team)
+	r-fin      1 2.5 5 Financial Subsystem Requirements Doc.
+	r-mfg      2 4 10 Manufacturing Subsystem Requirements Doc.
+	r-sls      0.5 1.5 5 Sales Subsystem Requiremetns Doc.
+	#wt-r      0.5 0.5 1 @3 Requirements Doc. Walk-thru (entire team)
+	
+	d-fin  3 6 12 Design Financial Subsystem
+	^p-fin 8 12 25 Program & Test Financial Subsystem
+	
+	d-mfg  4 10 20 Design Manufacturing Subsystem
+	^p-mfg 10 15 30 Program & Test Manufacturing Subsystem
+	
+	d-sls  3 6 10 Design Sales Subsystem
+	^p-sls 8 10 20 Program & Test Sales Subsystem
+	
+	test!    5 10 20 @2 Integration Test/Debug Entire System
+	userdoc 10 12 15 Write User Documentation
+	
+	#install 1 2 5 Install System
+	
+	*
+	
+	interview r-fin
+	"         r-mfg
+	"         r-sls
+	
+	r-fin wt-r
+	r-mfg "
+	r-sls "
+	
+	wt-r d-fin
+	"    d-mfg
+	"    d-sls
+	
+	d-fin userdoc
+	d-mfg "
+	d-sls "
+	
+	p-fin test
+	p-mfg "
+	p-sls "
+	
+	test    install
+	userdoc "
+	
+	*
+
 
 #### Gantt Chart
 	
