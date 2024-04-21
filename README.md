@@ -1,6 +1,6 @@
 # Stochastic Project Evaluation & Review Technique
 
-_Version 1.0.0+20240420  ([Version Release Notes](#ReleaseNotes))_ 
+_Version 1.0.1+20240421  ([Version Release Notes](#ReleaseNotes))_ 
 
 The _Stochastic Project Evaluation & Review Technique_ program, **SPERT**, supports Critical Path Method project planning, including generation of text-based GANTT charts.
 
@@ -24,7 +24,7 @@ You can run the **SPERT** program on Microsoft Windows as follows:
 
 - Download the **SPERT.exe** binary executable file from the **bin** sub-folder from this GitHub.com page.
 
-- To uninstall the program, simply delete the **PascalBoids.exe** file.
+- To uninstall the program, simply delete the **SPERT.exe** file.
 
 ### Ubuntu Linux
 
@@ -36,10 +36,7 @@ You can run the **SPERT** program on Ubuntu Linux (and presumably other Linux di
   
     chmod +x SPERT
 
-- To uninstall the program, simply delete the **PascalBoids** binary executable file.
-
-**_Note_**: When running on Linux, the StdErr error messages may not appear in the terminal.
-Instead these messages may be written to a file named **CON** in the current directory.
+- To uninstall the program, simply delete the **SPERT** binary executable file.
 
 ### Running the Program
 
