@@ -4,7 +4,7 @@ _Version 1.0.1+20240421  ([Version Release Notes](#ReleaseNotes))_
 
 The _Stochastic Project Evaluation & Review Technique_ program, **SPERT**, supports Critical Path Method project planning, including generation of text-based GANTT charts.
 
-This program is free open source software licensed under the [MIT License](./MIT-License.html), Copyright © 2024 Rick Rutt.
+This program is free open source software licensed under the **MIT License**, Copyright © 2024 Rick Rutt.
 
 Information about the source code compilation of the **SPERT** program appear at the end of this document in the [Developer Information](#DeveloperInformation) section.
 
@@ -383,6 +383,10 @@ Then rebuild the executable using the **Run | Build** menu item (or using the sh
 <a name="ReleaseNotes"></a>
 ## Release Notes
 
-### Version 1.0.0
+### Version 1.0.1+20240421
+
+Use builtin redirectable **StdErr** handle instead of opening **CON** system file.
+
+### Version 1.0.0+20240420
 
 Initial Free Pascal release.
