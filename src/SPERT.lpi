@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="11"/>
+    <Version Value="12"/>
     <PathDelim Value="\"/>
     <General>
       <Flags>
         <MainUnitHasCreateFormStatements Value="False"/>
         <MainUnitHasTitleStatement Value="False"/>
         <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <MainUnit Value="0"/>
       <Title Value="SPERT"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
@@ -19,8 +19,9 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
+      <RevisionNr Value="1"/>
       <Language Value="040B"/>
-      <StringTable FileDescription="Stochastic Project Evaluation &amp; Review Technique" LegalCopyright="Copyright 2024 Rick Rutt" ProductName="SPERT" ProductVersion="1.0.0+20240420"/>
+      <StringTable FileDescription="Stochastic Project Evaluation &amp; Review Technique" LegalCopyright="Copyright 2024 Rick Rutt" ProductName="SPERT" ProductVersion="1.0.1+20240421"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
@@ -31,7 +32,6 @@
     </PublishOptions>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0"/>
     </RunParams>
     <Units Count="1">
       <Unit0>

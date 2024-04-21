@@ -112,7 +112,6 @@ Var
 
   StartDate: integer;
 
-  StdErr: Text;
   PrnFile: Text;
 
 Procedure TypeHelpMsg;
@@ -1464,9 +1463,6 @@ End; { WritePrnFile }
 {$R *.res}
 
 Begin
-  assign (StdErr, 'CON');
-
-  rewrite (StdErr);
   writeln (StdErr, ' ');
   writeln (StdErr, 'STOCHASTIC P.E.R.T. PROJECT MANAGEMENT');
 
@@ -1498,7 +1494,5 @@ Begin
   If (PrintResources) Then ShowResources;
   If (PrintFinish) Then ShowFinish;
   If (PrintPrn) Then WritePrnFile;
-
-  Close (StdErr);
 End.
 
