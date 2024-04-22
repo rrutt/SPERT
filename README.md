@@ -72,7 +72,7 @@ The input file is read in the following format (any blank lines are ignored):
 	*
 	
 - **TaskCode** is a short taskname (up to 10 chars.) without blanks.
-If **TaskCode** begins with a **#***, then it is a _Milestone_ task.
+If **TaskCode** begins with a **#**, then it is a _Milestone_ task.
 Preceding **TaskCode** or **#TaskCode** with **^** implies that this task is a _successor_ to the task above it.
 If **TaskCode** ends with a **!**, the task is a _High Priority_ Task.
 
@@ -97,7 +97,7 @@ The file **test\SPERT-Example.txt** contains a small sample project for use in t
 	^interview 3 5 10 @3 Requirements Interviews (entire team)
 	r-fin      1 2.5 5 Financial Subsystem Requirements Doc.
 	r-mfg      2 4 10 Manufacturing Subsystem Requirements Doc.
-	r-sls      0.5 1.5 5 Sales Subsystem Requiremetns Doc.
+	r-sls      0.5 1.5 5 Sales Subsystem Requirements Doc.
 	#wt-r      0.5 0.5 1 @3 Requirements Doc. Walk-thru (entire team)
 	
 	d-fin  3 6 12 Design Financial Subsystem
