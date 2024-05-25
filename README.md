@@ -1,6 +1,6 @@
 # Stochastic Project Evaluation & Review Technique
 
-_Version 1.0.1+20240421  ([Version Release Notes](#ReleaseNotes))_ 
+_Version 1.0.2+20240525  ([Version Release Notes](#ReleaseNotes))_ 
 
 The _Stochastic Project Evaluation & Review Technique_ program, **SPERT**, supports Critical Path Method project planning, including generation of text-based GANTT charts.
 
@@ -382,6 +382,10 @@ Then rebuild the executable using the **Run | Build** menu item (or using the sh
 
 <a name="ReleaseNotes"></a>
 ## Release Notes
+
+### Version 1.0.2+20240525
+
+Minor output spacing adjustment.  Display Version in **StdErr** output.
 
 ### Version 1.0.1+20240421
 
