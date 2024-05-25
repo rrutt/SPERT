@@ -20,6 +20,8 @@ Program SPERT;
 Uses sysutils;
 
 Const
+  VERSION = '1.0.2+20240525';
+
   SHORT_STR_LEN = 10;
   LONG_STR_LEN = 255;
   MAX_FINISH = 400; { Largest # work days for a project }
@@ -1175,8 +1177,8 @@ Begin
           writeln (' Mean Durations: Calculated ', CalculatedMean:5:1,
                    ' Simulated ', MeanDur:5:1);
           writeln (' Expected Start ', (MeanFinish - MeanDur): 5: 1,
-                                                                  CopyLength (BLANK, 13),
-                                                                  ' Expected Finish ', MeanFinish: 5:1);
+                   CopyLength (BLANK, 12),
+                   ' Expected Finish ', MeanFinish: 5:1);
           writeln (' Criticality ', Criticality:8:1,
                    ' Float ', MeanFloat:5:1,
                    ' Delay ', MeanDelay:5:1);
@@ -1185,7 +1187,7 @@ Begin
       ps := Task^.FirstPred;
       While (ps <> Nil) Do
         Begin
-          writeln (CopyLength (BLANK, 19),
+          writeln (CopyLength (BLANK, 17),
           'Predecessor: ', ps^.PredSuccTask^.TaskCode);
           ps := ps^.NextPredSucc;
         End; { while processing predecessors }
@@ -1464,7 +1466,7 @@ End; { WritePrnFile }
 
 Begin
   writeln (StdErr, ' ');
-  writeln (StdErr, 'STOCHASTIC P.E.R.T. PROJECT MANAGEMENT');
+  writeln (StdErr, 'STOCHASTIC P.E.R.T. PROJECT MANAGEMENT  (Version ', VERSION, ')');
 
   If (Paramcount = 0) Then
     Begin
