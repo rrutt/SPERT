@@ -1,4 +1,10 @@
+/ This is an example input file for the SPERT program.
+
+  / This is a simple test project.
+
 Example Project Schedule
+
+  / These are the tasks for the project.
 
 kickoff    1 1 1 @3 All-day Kickoff Meeting (entire team)
 ^interview 3 5 10 @3 Requirements Interviews (entire team)
@@ -22,6 +28,8 @@ userdoc 10 12 15 Write User Documentation
 #install 1 2 5 Install System
 
 *
+
+/ These are additional task dependencies.
 
 interview r-fin
 "         r-mfg

@@ -1,5 +1,7 @@
 Example Project Schedule
 
+/ This file purposely contains a dependency cycle to demonstrate how it is detected and reported.
+
 kickoff    1 1 1 @3 All-day Kickoff Meeting (entire team)
 ^interview 3 5 10 @3 Requirements Interviews (entire team)
 r-fin      1 2.5 5 Financial Subsystem Requirements Doc.

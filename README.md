@@ -1,6 +1,6 @@
 # Stochastic Project Evaluation & Review Technique
 
-_Version 1.0.2+20240525  ([Version Release Notes](#ReleaseNotes))_ 
+_Version 1.1.0+20240615  ([Version Release Notes](#ReleaseNotes))_ 
 
 The _Stochastic Project Evaluation & Review Technique_ program, **SPERT**, supports Critical Path Method project planning, including generation of text-based GANTT charts.
 
@@ -89,9 +89,17 @@ indicates reuse of the value from the preceding line.
 
 - (The last * line is optional.)
 
+- (Any line starting with a slash (**/**) is considered a comment and is ignored.)
+
 The file **test\SPERT-Example.txt** contains a small sample project for use in testing the **SPERT** program:
 	
-	Example Project Schedule
+    / This is an example input file for the SPERT program.
+
+      / This is a simple test project.
+
+    Example Project Schedule
+
+      / These are the tasks for the project.
 	
 	kickoff    1 1 1 @3 All-day Kickoff Meeting (entire team)
 	^interview 3 5 10 @3 Requirements Interviews (entire team)
@@ -115,6 +123,8 @@ The file **test\SPERT-Example.txt** contains a small sample project for use in t
 	#install 1 2 5 Install System
 	
 	*
+
+    / These are additional task dependencies.
 	
 	interview r-fin
 	"         r-mfg
@@ -383,9 +393,11 @@ Then rebuild the executable using the **Run | Build** menu item (or using the sh
 <a name="ReleaseNotes"></a>
 ## Release Notes
 
-### Version 1.0.2+20240525
+### Version 1.1.0+20240615
 
-Minor output spacing adjustment.  Display Version in **StdErr** output.
+Minor output spacing adjustment.
+Display Version in **StdErr** output.
+Treat input lines starting with slash (**/**) as comments.
 
 ### Version 1.0.1+20240421
 
