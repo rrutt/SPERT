@@ -19,9 +19,8 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <RevisionNr Value="2"/>
-      <BuildNr Value="1"/>
-      <StringTable FileDescription="Stochastic Project Evaluation &amp; Review Technique" LegalCopyright="Copyright 2024 Rick Rutt" ProductName="SPERT" ProductVersion="1.0.2+20240525"/>
+      <MinorVersionNr Value="1"/>
+      <StringTable FileDescription="Stochastic Project Evaluation &amp; Review Technique" LegalCopyright="Copyright 2024 Rick Rutt" ProductName="SPERT" ProductVersion="1.1.0+20240615"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
