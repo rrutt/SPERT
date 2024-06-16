@@ -20,6 +20,8 @@ Program SPERT;
 Uses sysutils;
 
 Const
+  VERSION = '1.1.0+20240615';
+
   SHORT_STR_LEN = 10;
   LONG_STR_LEN = 255;
   MAX_FINISH = 400; { Largest # work days for a project }
@@ -34,6 +36,7 @@ Const
   PRIORITY_CHAR = '!';
   RESOURCE_CHAR = '@';
   DITTO_CHAR = '"';
+  COMMENT_CHAR = '/';
 
   DaysInMonth: array [1..12] Of integer = (31, 28, 31, 30, 31, 30,
                                            31, 31, 30, 31, 30, 31);
@@ -169,6 +172,7 @@ Begin
 {============================================Page 5==================================================}
   writeln;
   writeln (' (The last * line is optional.)');
+  writeln (' (Any line starting with a slash (/) is considered a comment and is ignored.)');
   writeln;
   writeln (' In the output Gantt chart, the following symbols are used:');
   writeln;
@@ -574,7 +578,10 @@ Begin
 
   Repeat
     readln (InputFile, NetworkDescription);
-    NetworkDescription := TrimRight (NetworkDescription);
+    NetworkDescription := TrimLeft(TrimRight(NetworkDescription));
+    If (NetworkDescription[1] = COMMENT_CHAR) Then Begin
+      NetworkDescription := '';
+    End
   Until (NetworkDescription <> '');
 
   writeln (StdErr);
@@ -586,8 +593,9 @@ Begin
   While (Not EOF (InputFile)) Do
     Begin
       readln (InputFile, InputLine);
-      InputLine := TrimRight (InputLine);
-      If (InputLine <> '') Then Case processing Of
+      InputLine := TrimLeft(TrimRight(InputLine));
+      If (InputLine[1] <> COMMENT_CHAR) Then Begin
+        If (InputLine <> '') Then Case processing Of
                                      TASKS:
                                             Begin
                                               If (InputLine = '*') Then processing := PRECEDENCES
@@ -598,7 +606,8 @@ Begin
                                                     If (InputLine <> '*') Then ProcessPrecedence;
                                                   End; { case PRECEDENCES }
         End; { case }
-      TaskCount := succ (TaskCount);
+        TaskCount := succ (TaskCount);
+      End;
     End; { while not end of file }
   Close (InputFile);
 
@@ -1175,8 +1184,8 @@ Begin
           writeln (' Mean Durations: Calculated ', CalculatedMean:5:1,
                    ' Simulated ', MeanDur:5:1);
           writeln (' Expected Start ', (MeanFinish - MeanDur): 5: 1,
-                                                                  CopyLength (BLANK, 13),
-                                                                  ' Expected Finish ', MeanFinish: 5:1);
+                   CopyLength (BLANK, 12),
+                   ' Expected Finish ', MeanFinish: 5:1);
           writeln (' Criticality ', Criticality:8:1,
                    ' Float ', MeanFloat:5:1,
                    ' Delay ', MeanDelay:5:1);
@@ -1185,7 +1194,7 @@ Begin
       ps := Task^.FirstPred;
       While (ps <> Nil) Do
         Begin
-          writeln (CopyLength (BLANK, 19),
+          writeln (CopyLength (BLANK, 17),
           'Predecessor: ', ps^.PredSuccTask^.TaskCode);
           ps := ps^.NextPredSucc;
         End; { while processing predecessors }
@@ -1464,7 +1473,7 @@ End; { WritePrnFile }
 
 Begin
   writeln (StdErr, ' ');
-  writeln (StdErr, 'STOCHASTIC P.E.R.T. PROJECT MANAGEMENT');
+  writeln (StdErr, 'STOCHASTIC P.E.R.T. PROJECT MANAGEMENT  (Version ', VERSION, ')');
 
   If (Paramcount = 0) Then
     Begin
